@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AH Vocal Songs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="password-gate" class="password-gate">
+    <div class="gate-card">
+      <h2>AH Vocal Songs</h2>
+      <p class="gate-hint">Enter the password to continue</p>
+      <form id="password-form">
+        <input type="password" id="password-input" placeholder="Password" autocomplete="current-password" autofocus>
+        <button type="submit">Enter</button>
+      </form>
+      <p id="gate-error" class="gate-error" hidden>Incorrect password</p>
+    </div>
+  </div>
+
+  <div class="no-select" id="player-root" hidden>
+    <header>
+      <h1>AH Vocal Songs</h1>
+      <p class="tagline">Listen • Discover • Enjoy</p>
+    </header>
+
+    <main class="tracks-grid">
+      <article class="track-card" data-track="0">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/undine_phone.png" alt="Track 0" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Level to The Climax</h3>
+          <p class="artist">Robin</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="1">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/orpheus_phone.png" alt="Track 1" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Rot in Hell!</h3>
+          <p class="artist">Erik & Robin</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="2">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/dyne_phone.png" alt="Track 2" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>BRODOWN!</h3>
+          <p class="artist">Robin</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="3">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/lyrielle_phone.png" alt="Track 3" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Wink!</h3>
+          <p class="artist">Bo</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="4">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/joey_phone.png" alt="Track 4" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Take it all away</h3>
+          <p class="artist">Jordi & Robin</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="5">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/bunny_phone.png" alt="Track 5" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Cut it out</h3>
+          <p class="artist">Helmi</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="6">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/yuzu_phone.png" alt="Track 6" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Heavenly Wind</h3>
+          <p class="artist">Robin</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="7">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/claire_phone.png" alt="Track 7" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Song of Wind</h3>
+          <p class="artist">Georgia</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="8">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/claire_phone.png" alt="Track 8" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Song of Chrysalis</h3>
+          <p class="artist">Georgia</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="9">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/claire_phone.png" alt="Track 9" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Perpetual Motion</h3>
+          <p class="artist">Georgia</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="10">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/helios_phone.png" alt="Track 10" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Ascension</h3>
+          <p class="artist">Robin</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="11">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/aeliana_phone.png" alt="Track 11" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Holy Heaven</h3>
+          <p class="artist">Lazslo</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="12">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/gedrick_phone.png" alt="Track 12" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Too rich for my blood</h3>
+          <p class="artist">Robin</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="13">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/ruby_phone.png" alt="Track 13" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>You can't stop me now</h3>
+          <p class="artist">Lazslo & Robin</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+
+      <article class="track-card" data-track="14">
+        <div class="artwork-wrap" oncontextmenu="return false;">
+          <img src="assets/covers/game logo.png" alt="Track 14" class="artwork" loading="lazy">
+          <div class="play-overlay">
+            <button class="play-btn" aria-label="Play">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="track-info">
+          <h3>Flee My Eyes</h3>
+          <p class="artist">Angie</p>
+        </div>
+        <div class="audio-controls">
+          <button class="ctrl-play" aria-label="Play / Pause">
+            <svg class="icon-play-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="icon-pause-sm hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          </button>
+          <div class="progress-wrap">
+            <div class="progress-bar" role="slider" tabindex="0" aria-label="Seek"></div>
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time">0:00 / 0:00</span>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <!-- Hidden audio: loaded via fetch as blob - no direct source in DOM; custom controls only -->
+  <audio id="global-audio" preload="none" controlsList="nodownload" disablePictureInPicture disableRemotePlayback playsInline style="position:absolute;opacity:0;pointer-events:none;width:0;height:0;"></audio>
+
+  <script src="auth.js"></script>
+  <script src="player.js"></script>
+</body>
+</html>
